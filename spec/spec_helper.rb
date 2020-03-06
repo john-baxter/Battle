@@ -103,6 +103,19 @@ ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
+
+# require File.join# is a method to create a newfilepath (in the form of a new string) 
+
+
+# (File.dirname(__FILE__)# __FILE__ = this current file where this text acually is
+# # we know what it's called and where it is; because we made it and we defined those things.
+
+# , '..', # this is the relationship between the one above, and the one below - again we know this because we did it. 
+
+# 'app.rb')# This is the file that we need/will be using. This is the anchor point for all the activities/'requires' in the whole setup.
+
+
+
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
